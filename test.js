@@ -1,2 +1,6 @@
-console.log("hello world")
-console.log(2+2)
+let fs = require("fs")
+
+
+fs.writeFile(`${__dirname}/index.html`, `<h1>HTML is cool</h1>`, (error) => {
+    error ? console.log(error) : console.log("yey! congrats")
+} )
